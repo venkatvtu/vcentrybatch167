@@ -8,6 +8,7 @@ String a="Vcentry";
 System.out.println(a.substring(1, 3));
 System.out.println(a.substring(1, 4));
 System.out.println(a.substring(1));
+
 	}
 
 }
