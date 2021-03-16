@@ -5,7 +5,7 @@ public class ObjectArrayTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Object[] i= new Object[5];
-i[0]=10;
+	i[0]=10;
 	i[1]="vcentry";
 	i[2]=10.5;
 	i[3]=true;
