@@ -1,7 +1,8 @@
 package inheritanceTest;
 
 public class WorldBank {
-public static int interest = 10; // variable
+public static int interest = 10;// variable
+
 	public static void credit()
 	{
 		System.out.println("Credit logic from world bank");

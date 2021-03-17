@@ -4,7 +4,20 @@ public class SBITest implements RBITest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		SBITest s = new SBITest();
+		s.credit();
+		s.debit();
+		s.loan();
+		s.mobilebanking();
+		RBITest r= new SBITest();
+		r.credit();
+		r.debit();
+		r.loan();
+		//r.mobilebanking();  not visible
+	}
+	public void mobilebanking()
+	{
+		
 	}
 
 	
