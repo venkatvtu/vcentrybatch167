@@ -5,6 +5,7 @@ public class HDFCStaticTest implements RBIStaticTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 RBIStaticTest.kyc();
+
 	}
 
 	@Override
