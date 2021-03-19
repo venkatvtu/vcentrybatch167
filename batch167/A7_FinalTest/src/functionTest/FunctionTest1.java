@@ -10,5 +10,9 @@ public class FunctionTest1 {
 	{
 		System.out.println("add from functiontest1");
 	}
+	public static void sub()
+	{
+		System.out.println("sub from functiontest1");
+	}
 
 }
