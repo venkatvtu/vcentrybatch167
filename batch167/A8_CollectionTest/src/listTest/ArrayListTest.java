@@ -9,6 +9,7 @@ public class ArrayListTest {
 		ArrayList a= new ArrayList(); // non generic-object
 		ArrayList<String> s = new ArrayList<String>(); //generic
 		ArrayList<Integer> i = new ArrayList<Integer>();
+		
 	}
 
 }
