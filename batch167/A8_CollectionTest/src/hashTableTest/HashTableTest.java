@@ -13,6 +13,8 @@ public class HashTableTest {
 		table.put("password", "123");
 		table.put("domain", "testing");
 		table.put("company", "vcentry");
+		//table.put("mobile", null);
+		table.put(null, "guindy");
 		
 		//System.out.println(table.get("username"));
 		

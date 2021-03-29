@@ -1,23 +1,21 @@
 package hashTableTest;
 
-import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.Set;
+import java.util.TreeMap;
 
-public class HashMapTest {
+public class LinkedHashMap {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		HashMap map = new HashMap();
+		java.util.LinkedHashMap map = new java.util.LinkedHashMap();
 		map.put("username", "abc");
 		map.put("password", "123");
 		map.put("domain", "testing");
 		map.put("company", "vcentry");
 		map.put("username", "abc123");
-		//map.put("mobile", null);
-		map.put(null, "guindy");
+		map.put("mobile", null); // value is allow
+		map.put(null, "guindy"); // key not allow
 		map.put(null, "chennai");
 		
 		
@@ -34,6 +32,8 @@ public class HashMapTest {
 		
 		
 		}
+		
+		
 	}
 
 }
