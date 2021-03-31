@@ -1,5 +1,6 @@
 package textFileTest;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -17,10 +18,14 @@ public class FileWriterTest {
 			f.createNewFile();
 		}
 		FileWriter fw = new FileWriter(f);
+	
 		fw.write("vcentry");
 		//fw.close(); //throw an error
+		
 		fw.write("vcentry2");
+		
 		fw.close();
+		
 		
 	}
 
