@@ -16,7 +16,7 @@ public class FileWriterWithExistingContents {
 		{
 			f.createNewFile();
 		}
-		FileWriter fw = new FileWriter(f,true);
+		FileWriter fw = new FileWriter(f,true); // 
 		fw.write("vcentry");
 		//fw.close(); //throw an error
 		fw.write("vcentry2");

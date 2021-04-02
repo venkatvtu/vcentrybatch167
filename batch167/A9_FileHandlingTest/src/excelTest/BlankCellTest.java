@@ -23,32 +23,27 @@ public class BlankCellTest {
 		for (int i = 0; i < row; i++) {
 
 			for (int j = 0; j < column; j++) {
-				//System.out.println(sheet.getRow(i).getCell(j).getCellType()==Cell.CELL_TYPE_STRING);
-				if(sheet.getRow(i).getCell(j)!=null) {
-				
-				if(sheet.getRow(i).getCell(j).getCellType()==Cell.CELL_TYPE_STRING) {
-					
-				String data = sheet.getRow(i).getCell(j).getStringCellValue();
-				System.out.print(data + "  ");
-				//String a="5";
-				}
-				else if(sheet.getRow(i).getCell(j).getCellType()==Cell.CELL_TYPE_NUMERIC) {
-					
-				int data = (int) sheet.getRow(i).getCell(j).getNumericCellValue();
-				System.out.print(data + "  ");
-				//String a="5";
-				}
-				}
-				else {
+				// System.out.println(sheet.getRow(i).getCell(j).getCellType()==Cell.CELL_TYPE_STRING);
+				if (sheet.getRow(i).getCell(j) != null) {
+
+					if (sheet.getRow(i).getCell(j).getCellType() == Cell.CELL_TYPE_STRING) {
+
+						String data = sheet.getRow(i).getCell(j).getStringCellValue();
+						System.out.print(data + "  ");
+						// String a="5";
+					} else if (sheet.getRow(i).getCell(j).getCellType() == Cell.CELL_TYPE_NUMERIC) {
+
+						int data = (int) sheet.getRow(i).getCell(j).getNumericCellValue();
+						System.out.print(data + "  ");
+						// String a="5";
+					}
+				} else {
 					System.out.print("empty  ");
 				}
-				}
+			}
 			System.out.println();
 		}
-		
-		
-		
-		
+
 	}
 
 }
