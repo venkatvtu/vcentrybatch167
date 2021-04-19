@@ -16,7 +16,7 @@ public class SampleTestA {
 	public static void add()
 	{
 		
-		int k=i+j;
+		//int k=i+j;
 		
 	}
 }
