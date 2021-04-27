@@ -30,6 +30,8 @@ public class A27_ScreenShotTest {
 		// interface we cant create object so we are doing type casting
 		File src = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
 		
+		
+		
 		// FileUtils = apche - 2.0 version
 		// filehandler = selenium - 3.0 version
 		

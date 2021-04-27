@@ -19,9 +19,10 @@ public class A25_BrowserResizeTest {
 		
 		Thread.sleep(3000);
 		//resize test
-		Dimension dimension = new Dimension(300, 800);
-		wd.manage().window().setSize(dimension);// dimension means height and width
-		
+		//Dimension dimension = new Dimension(300, 800);
+		//wd.manage().window().setSize(dimension);// dimension means height and width
+		Dimension dimension = new Dimension(400, 900);
+		wd.manage().window().setSize(dimension);
 		// or
 		//wd.manage().window().setSize(new Dimension(300, 800));
 		
