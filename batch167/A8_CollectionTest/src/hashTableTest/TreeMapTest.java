@@ -16,8 +16,8 @@ public class TreeMapTest {
 		map.put("domain", "testing");
 		map.put("company", "vcentry");
 		map.put("username", "abc123");
-		map.put("mobile", null); // value is allow
-		//map.put(null, "guindy"); // key not allow
+		//map.put("mobile", null); // key is allow
+		map.put(null, "guindy"); // value not allow
 		//map.put(null, "chennai");
 		
 		

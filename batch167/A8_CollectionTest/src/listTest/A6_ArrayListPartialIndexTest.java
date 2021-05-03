@@ -11,6 +11,7 @@ public class A6_ArrayListPartialIndexTest {
 		a.add(1,"vcentry2"); //1
 		a.add("vcentry3"); //2
 		a.add("vcentry4");//3
+		
 	for(int i=0;i<a.size();i++)
 	{
 		System.out.println(a.get(i));
