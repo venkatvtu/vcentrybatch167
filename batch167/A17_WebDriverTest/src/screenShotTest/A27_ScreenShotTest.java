@@ -2,6 +2,7 @@ package screenShotTest;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Vector;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
@@ -38,6 +39,8 @@ public class A27_ScreenShotTest {
 		FileHandler.copy(src, new File("C:\\vcentry\\batch167\\A17_WebDriverTest\\ScreenShot\\ping.png"));
 		
 	
+		
+		
 	}
 
 }
