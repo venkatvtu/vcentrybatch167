@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class A63_ElementStaleRefExceptionTest {
+public class A65_ElementStaleRefExceptionSolution {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -18,16 +18,26 @@ public class A63_ElementStaleRefExceptionTest {
 		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		wd.get("https://www.google.com/");
 		
-		WebElement searchbox =wd.findElement(By.name("q"));
+		//Solution 1 
+		
+		/*WebElement searchbox =wd.findElement(By.name("q"));
 		searchbox.sendKeys("chennai");
 		searchbox.submit();
 		
 		wd.navigate().back();
-	
-		searchbox.sendKeys("chennai");
-		searchbox.submit();
+		WebElement searchbox1 =wd.findElement(By.name("q"));
+		searchbox1.sendKeys("guindy");
+		searchbox1.submit();*/
 		
-	
+		// solution 2 
+		
+		wd.findElement(By.name("q")).sendKeys("chennai");
+		wd.findElement(By.name("q")).submit();
+		wd.navigate().back();
+		wd.findElement(By.name("q")).sendKeys("guindy");
+		wd.findElement(By.name("q")).submit();
+		
+		
 	}
 
 }
