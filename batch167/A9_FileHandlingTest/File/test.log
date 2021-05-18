@@ -2,3 +2,4 @@
 2021-04-02 09:34:52.328 ERROR LogTest:17 - error1
 2021-04-02 09:37:52.333 INFO  LogTest:16 - info2
 2021-04-02 09:37:52.337 ERROR LogTest:17 - error2
+

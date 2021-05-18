@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="annotationsTest.A11_BeforeMethodTest">
+      <class name="screenshotTestForFail.A19_FailedTestCaseOnlyRunTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="searchTest"/>
-          <include name="openBrowser"/>
+          <include name="sub"/>
         </methods>
-      </class> <!-- annotationsTest.A11_BeforeMethodTest -->
+      </class> <!-- screenshotTestForFail.A19_FailedTestCaseOnlyRunTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
