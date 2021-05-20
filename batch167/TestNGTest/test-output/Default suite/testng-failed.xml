@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="screenshotTestForFail.A19_FailedTestCaseOnlyRunTest">
+      <class name="keyWords.A9_InvocationTimeOutTest">
         <methods>
-          <include name="sub"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- screenshotTestForFail.A19_FailedTestCaseOnlyRunTest -->
+      </class> <!-- keyWords.A9_InvocationTimeOutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

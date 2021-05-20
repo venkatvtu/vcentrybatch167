@@ -24,8 +24,10 @@ public class A22_SingleTestSingleDataProviderTest {
 		//Object[][] data = new Object[row][column]
 		//or
 		//Object[][] data = new Object[iterator count][data]
+		// or
+		// Object[][]data = new Object[dataset][data]
 		//first iteration
-		Object[][] data= new Object[3][4];
+		Object[][] data= new Object[3][4]; // two dimentional array
 		data[0][0]="chrome";
 		data[0][1]="test url1";
 		data[0][2]="username_a";

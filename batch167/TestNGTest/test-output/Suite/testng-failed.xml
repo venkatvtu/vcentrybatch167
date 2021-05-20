@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DependsOnTest(failed)">
+  <test thread-count="5" name="Login VinothApplication(failed)">
+    <parameter name="TESTING" value="ChromeDriver()"/>
+    <parameter name="PASSWORD" value="Vcentry@2021"/>
+    <parameter name="USERNAME" value="venkat"/>
+    <parameter name="URL" value="http://djangovinoth.pythonanywhere.com/login"/>
     <classes>
-      <class name="keyWords.A7_DependsOnTest">
+      <class name="task.ParameterTask">
         <methods>
-          <include name="search"/>
-          <include name="booking"/>
-          <include name="cancel"/>
-          <include name="loginTest"/>
+          <include name="loginVinoth" invocation-numbers="0"/>
         </methods>
-      </class> <!-- keyWords.A7_DependsOnTest -->
+      </class> <!-- task.ParameterTask -->
     </classes>
-  </test> <!-- DependsOnTest(failed) -->
-  <test thread-count="5" name="InvocationTimeOutTest(failed)">
-    <classes>
-      <class name="keyWords.A9_InvocationTimeOutTest">
-        <methods>
-          <include name="login"/>
-        </methods>
-      </class> <!-- keyWords.A9_InvocationTimeOutTest -->
-    </classes>
-  </test> <!-- InvocationTimeOutTest(failed) -->
+  </test> <!-- Login VinothApplication(failed) -->
 </suite> <!-- Failed suite [Suite] -->

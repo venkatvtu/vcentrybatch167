@@ -13,7 +13,7 @@ public class A5_SkipTest {
 	{
 		System.out.println("---sub-----");
 	}
-	@Test(priority =3,enabled=false)
+	@Test(priority =3,enabled = false)
 	public void mul()
 	{
 		System.out.println("---mul-----");
