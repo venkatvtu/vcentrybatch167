@@ -9,7 +9,7 @@ public class GroupTest {
 		System.out.println("Login test completed");
 		
 	}
-	@Test(priority =2, groups= {"Book"})
+	@Test(priority =2, groups= {"Book","Cancel"})
 	public void searchTest()
 	{
 		System.out.println("search test completed");

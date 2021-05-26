@@ -12,9 +12,11 @@ public class A14_HardAssertTest {
 		System.out.println("validate your currrent page title");
 		String expected="Google";
 		// use webdriver get your page title
-		String actual="Yahoo";
+		String actual="yahoo";
 		//Assert - static functions
-		Assert.assertEquals(actual, expected);   // if not equal stopped after this and execute another test case
+		Assert.assertEquals(actual, expected); 
+		
+		// if not equal stopped after this and execute another test case
 		System.out.println("validation completed");
 	}
 	

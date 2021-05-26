@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests">
+<!-- default thread-count is 5 - it takes based on how many test cases you are giving -->
+<!-- don't specify the thread-count more than 5..will not accept if the error occurs in this case -->
+
+  <test thread-count="5" name="Chrome Browser">
+  <parameter name = "browser" value = "CHROME"></parameter>
+  
+    <classes>
+      <class name="parallelTest.ParallelTest"/>
+    </classes>
+    </test> <!-- Test -->
+  
+    <test thread-count="5" name="Firefox Browser">
+  <parameter name = "browser" value = "FIREFOX"></parameter>
+  
+    <classes>
+      <class name="parallelTest.ParallelTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

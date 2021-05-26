@@ -16,11 +16,14 @@ public class A5_SkipTest {
 	@Test(priority =3,enabled = false)
 	public void mul()
 	{
+		
 		System.out.println("---mul-----");
 	}
-	@Test(priority =4)
+	@Test(priority =4, dependsOnMethods = "mul")
 	public void div()
 	{
+		
+		
 		System.out.println("---div-----");
 	}
 }

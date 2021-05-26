@@ -17,18 +17,12 @@ public class FileReaderTest {
 		{
 			f.createNewFile();
 		}
-		FileWriter fw = new FileWriter(f);
-		BufferedWriter bw = new BufferedWriter(fw);
-		bw.write("vcentry1");
-		bw.newLine();
-		bw.write("vcentry2");
-		bw.newLine();
-		bw.newLine();
-		bw.write("vcentry3");
-		bw.newLine();
-		bw.write("vcentry4");
-		bw.newLine();
-		bw.close();
+		/*
+		 * FileWriter fw = new FileWriter(f); BufferedWriter bw = new
+		 * BufferedWriter(fw); bw.write("vcentry1"); bw.newLine(); bw.write("vcentry2");
+		 * bw.newLine(); bw.newLine(); bw.write("vcentry3"); bw.newLine();
+		 * bw.write("vcentry4"); bw.newLine(); bw.close();
+		 */
 		// read file
 		FileReader fr = new FileReader(f);
 		BufferedReader br = new BufferedReader(fr);

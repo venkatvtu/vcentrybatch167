@@ -9,6 +9,7 @@ public class RBITest extends WorldBank {
 		W.debit();
 		W.loan();*/ // this can be achieved with the help of Extends 
 	credit();
+	
 	debit();
 	//loan();
 	eduloan();

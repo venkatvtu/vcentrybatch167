@@ -12,13 +12,14 @@ public class HashMapTest {
 
 		HashMap map = new HashMap();
 		map.put("username", "abc");
-		map.put("password", "123");
+		map.put("password", "123"); // key , value
 		map.put("domain", "testing");
 		map.put("company", "vcentry");
 		map.put("username", "abc123");
 		// map.put("mobile", null);
 		map.put(null, "guindy");
 		map.put(null, "chennai");
+		
 		
 		// System.out.println(map.get("username"));
 		// Set s= map.keySet();

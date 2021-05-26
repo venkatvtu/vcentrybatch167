@@ -29,9 +29,10 @@ public class A16_FailedCaseScreenshotTest {
 			WebElement input = wd.findElement(By.name("qadsda"));
 			input.sendKeys("chennai");
 			input.submit();
-			File src = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+			// File src = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
 
-			FileHandler.copy(src, new File("C:\\vcentry\\batch167\\TestNGTest\\ScreenShot\\failed.png"));
+			// FileHandler.copy(src, new
+			// File("C:\\vcentry\\batch167\\TestNGTest\\ScreenShot\\failed.png"));
 		} catch (Exception e) {
 			File src = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
 

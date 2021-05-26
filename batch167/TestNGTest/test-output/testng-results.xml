@@ -2,24 +2,32 @@
 <testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-20T18:38:55 IST" name="Default suite" finished-at="2021-05-20T18:38:55 IST" duration-ms="138">
+  <suite started-at="2021-05-25T17:10:08 IST" name="Suite" finished-at="2021-05-25T17:10:08 IST" duration-ms="172">
     <groups>
+      <group name="venkat">
+        <method signature="sample.loginTest()[pri:1, instance:groupTest.sample@61dd025]" name="loginTest" class="groupTest.sample"/>
+      </group> <!-- venkat -->
+      <group name="kishore">
+        <method signature="sample.bookingTest()[pri:3, instance:groupTest.sample@61dd025]" name="bookingTest" class="groupTest.sample"/>
+        <method signature="sample.cancelTest()[pri:4, instance:groupTest.sample@61dd025]" name="cancelTest" class="groupTest.sample"/>
+        <method signature="sample.loginTest()[pri:1, instance:groupTest.sample@61dd025]" name="loginTest" class="groupTest.sample"/>
+      </group> <!-- kishore -->
     </groups>
-    <test started-at="2021-05-20T18:38:55 IST" name="Default test" finished-at="2021-05-20T18:38:55 IST" duration-ms="138">
-      <class name="keyWords.A5_SkipTest">
-        <test-method signature="add()[pri:1, instance:keyWords.A5_SkipTest@65d6b83b]" started-at="2021-05-20T18:38:55 IST" name="add" finished-at="2021-05-20T18:38:55 IST" duration-ms="19" status="PASS">
+    <test started-at="2021-05-25T17:10:08 IST" name="Test" finished-at="2021-05-25T17:10:08 IST" duration-ms="172">
+      <class name="groupTest.sample">
+        <test-method signature="loginTest()[pri:1, instance:groupTest.sample@61dd025]" started-at="2021-05-25T17:10:08 IST" name="loginTest" finished-at="2021-05-25T17:10:08 IST" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- add -->
-        <test-method signature="sub()[pri:2, instance:keyWords.A5_SkipTest@65d6b83b]" started-at="2021-05-20T18:38:55 IST" name="sub" finished-at="2021-05-20T18:38:55 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method signature="bookingTest()[pri:3, instance:groupTest.sample@61dd025]" started-at="2021-05-25T17:10:08 IST" name="bookingTest" finished-at="2021-05-25T17:10:08 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sub -->
-        <test-method signature="div()[pri:4, instance:keyWords.A5_SkipTest@65d6b83b]" started-at="2021-05-20T18:38:55 IST" name="div" finished-at="2021-05-20T18:38:55 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- bookingTest -->
+        <test-method signature="cancelTest()[pri:4, instance:groupTest.sample@61dd025]" started-at="2021-05-25T17:10:08 IST" name="cancelTest" finished-at="2021-05-25T17:10:08 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- div -->
-      </class> <!-- keyWords.A5_SkipTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- cancelTest -->
+      </class> <!-- groupTest.sample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

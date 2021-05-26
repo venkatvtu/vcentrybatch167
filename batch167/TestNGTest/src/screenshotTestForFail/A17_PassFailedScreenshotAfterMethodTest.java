@@ -35,7 +35,7 @@ public class A17_PassFailedScreenshotAfterMethodTest {
 		File src = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
 
 		FileHandler.copy(src, new File("C:\\vcentry\\batch167\\TestNGTest\\ScreenShot\\fail.png"));
-
+		
 	}
 
 }
