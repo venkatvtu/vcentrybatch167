@@ -11,13 +11,15 @@
       <class name="parallelTest.ParallelTest"/>
     </classes>
     </test> <!-- Test -->
-  
-    <test thread-count="5" name="Firefox Browser">
+   <test thread-count="5" name="Firefox Browser">
   <parameter name = "browser" value = "FIREFOX"></parameter>
   
     <classes>
       <class name="parallelTest.ParallelTest"/>
     </classes>
   </test> <!-- Test -->
+  
+  
+  
   
 </suite> <!-- Suite -->

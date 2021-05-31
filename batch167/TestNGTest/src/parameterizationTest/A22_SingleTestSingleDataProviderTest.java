@@ -7,7 +7,8 @@ public class A22_SingleTestSingleDataProviderTest {
 	@Test(dataProvider = "testdata")
 	public void loginTest(String browser,String url,String username,String password)
 	{
-	//execute
+	
+		//execute
 		System.out.println("Open browser    - "+browser);
 		System.out.println("Enter URL       - "+url);
 		System.out.println("Enter User Name - "+username);
@@ -21,6 +22,7 @@ public class A22_SingleTestSingleDataProviderTest {
 	{
 		//passdata
 		//single dimention object array,two dimentional object array, Iterator<object>
+		
 		//Object[][] data = new Object[row][column]
 		//or
 		//Object[][] data = new Object[iterator count][data]
@@ -32,6 +34,7 @@ public class A22_SingleTestSingleDataProviderTest {
 		data[0][1]="test url1";
 		data[0][2]="username_a";
 		data[0][3]="password123";
+		
 		//second iteration
 		
 		data[1][0]="firfox";

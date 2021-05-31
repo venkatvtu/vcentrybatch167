@@ -30,7 +30,7 @@ public class ITestResultTest{
 		
 		@AfterMethod
 		public void tearDown(ITestResult result) {
-			
+		
 			System.out.println("getEndMillis  -"+result.getEndMillis());
 			System.out.println("getHost  -"+result.getHost());
 			System.out.println("getInstanceName  -"+result.getInstanceName());
