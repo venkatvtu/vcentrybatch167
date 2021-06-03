@@ -1,0 +1,136 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-03T05:13:04.836Z",
+        "line": 9,
+        "name": "validate login feature of vcentry app with valid data...",
+        "description": "",
+        "id": "validate-login-features-of-vcentry-app;validate-login-feature-of-vcentry-app-with-valid-data...",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8996600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "open browser",
+            "match": {
+              "location": "testCases.LoginTest.openBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "enter url",
+            "match": {
+              "location": "testCases.LoginTest.enterUrl()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click login link",
+            "match": {
+              "location": "testCases.LoginTest.clickLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify login page loaded or not",
+            "match": {
+              "location": "testCases.LoginTest.verifyLoginPageLoadedOrNot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "enter username",
+            "match": {
+              "location": "testCases.LoginTest.enterUserName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter password",
+            "match": {
+              "location": "testCases.LoginTest.enterPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click login button",
+            "match": {
+              "location": "testCases.LoginTest.clickLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify login success or not",
+            "match": {
+              "location": "testCases.LoginTest.verifyLoginSuccessOrNot()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@validLogin"
+          }
+        ]
+      }
+    ],
+    "name": "validate login features of vcentry app",
+    "description": "",
+    "id": "validate-login-features-of-vcentry-app",
+    "keyword": "Feature",
+    "uri": "classpath:testCases/login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

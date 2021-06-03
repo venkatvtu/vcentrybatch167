@@ -23,14 +23,13 @@ public class SampleTest {
 public static void main(String[] args) throws IOException {
 	
 	DesiredCapabilities caps = new DesiredCapabilities();
-	caps.setCapability("os_version", "7");
+	caps.setCapability("os_version", "10");
     caps.setCapability("resolution", "1920x1080");
     caps.setCapability("browser", "IE");
-    caps.setCapability("browser_version", "10.0");
+    caps.setCapability("browser_version", "11.0");
     caps.setCapability("os", "Windows");
     caps.setCapability("name", "BStack-[Java] Sample Test"); // test name
-    caps.setCapability("build", "BStack Build Number 2");
-    caps.setCapability("browserstack.debug", "true");
+    caps.setCapability("build", "BStack Build Number 4"); // CI/CD job or build name    caps.setCapability("browserstack.debug", "true");
     WebDriver driver = new RemoteWebDriver(new java.net.URL(URL),caps);
 	driver.get("https://www.google.co.in/");
 	WebElement input = driver.findElement(By.name("q"));
@@ -38,7 +37,7 @@ public static void main(String[] args) throws IOException {
 	input.submit();
 	System.out.println(driver.getTitle());
 	File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-	FileHandler.copy(src, new File("C:\\vcentry\\batch167\\BrowserStack\\screenshot"));
+	FileHandler.copy(src, new File("C:\\vcentry\\batch167\\BrowserStack\\screenshot\\widnows.png"));
 	driver.quit();
 }
 

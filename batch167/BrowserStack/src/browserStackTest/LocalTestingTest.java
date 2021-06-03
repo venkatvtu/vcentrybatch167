@@ -28,7 +28,7 @@ public static void main(String[] args) throws IOException {
   caps.setCapability("name", "BStack-[Java] Sample Test"); // test name
   caps.setCapability("build", "BStack Build Number 2");
   caps.setCapability("browserstack.debug", "true");
-  caps.setCapability("browserstack.local", "true");
+ caps.setCapability("browserstack.local", "true");
   WebDriver driver = new RemoteWebDriver(new java.net.URL(URL),caps);
 	driver.get("https://www.google.co.in/");
 	WebElement input = driver.findElement(By.name("q"));

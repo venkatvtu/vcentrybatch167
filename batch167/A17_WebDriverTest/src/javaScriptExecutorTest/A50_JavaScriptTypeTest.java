@@ -14,18 +14,18 @@ public class A50_JavaScriptTypeTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "C:\\vcentry\\batch167\\A17_WebDriverTest\\browser\\chromedriver.exe");
-		WebDriver wd =  new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\vcentry\\batch167\\A17_WebDriverTest\\browser\\chromedriver.exe");
+		WebDriver wd = new ChromeDriver();
 		wd.manage().window().maximize();
 		wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		wd.get("https://www.google.com/");
+
+		WebElement searchbox = wd.findElement(By.name("q"));
+		JavascriptExecutor js = (JavascriptExecutor) wd;
+
+		js.executeScript("arguments[0].value='chennai'", searchbox);
 		
-	WebElement searchbox = 	wd.findElement(By.name("q"));
-	JavascriptExecutor js = 	(JavascriptExecutor)wd;
-	 	
-	js.executeScript("arguments[0].value='chennai'", searchbox);
-	
-	
 	}
 
 }

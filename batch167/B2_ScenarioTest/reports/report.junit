@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.748">
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="0.259">
+        <system-out><![CDATA[Given open browser..........................................................passed
+When enter url..............................................................passed
+When click login link.......................................................passed
+Then verify login page loaded or not........................................passed
+When enter username.........................................................passed
+And enter password..........................................................passed
+When click login button.....................................................passed
+Then verify login success or not............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
