@@ -10,6 +10,11 @@ public class LoginTest {
 	@Given ("open browser as {string}")
 	public void openBrowser(String Browser)
 	{
+		if(Browser.equals("ie"))
+		{
+			int i=1/0;
+
+		}
 		System.out.println("--------openBrowser--------"+Browser);
 	}
 	@When ("enter url as {string}")
@@ -31,6 +36,10 @@ public class LoginTest {
 	@When ("enter username as {string}")
 	public void enterUserName(String userName)
 	{
+		if(userName.equals("User3"))
+		{
+			int i=1/0;
+		}
 		System.out.println("--------enterUserName--------"+userName);
 	}
 	@And ("enter password as {string}")

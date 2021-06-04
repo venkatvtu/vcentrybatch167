@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="2.86">
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="0.577">
+        <system-out><![CDATA[Given open browser as "firefox".............................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When click login link.......................................................passed
+Then verify login page loaded or not........................................passed
+When enter username as "User1"..............................................passed
+And enter password as "Guru@12345"..........................................passed
+When click login button.....................................................passed
+Then verify login success or not............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data... 2" time="0.05">
+        <system-out><![CDATA[Given open browser as "chrome"..............................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When click login link.......................................................passed
+Then verify login page loaded or not........................................passed
+When enter username as "User2"..............................................passed
+And enter password as "Guru@12345"..........................................passed
+When click login button.....................................................passed
+Then verify login success or not............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data... 3" time="0.038">
+        <failure message="/ by zero" type="java.lang.ArithmeticException"><![CDATA[Given open browser as "ie"..................................................failed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........skipped
+When click login link.......................................................skipped
+Then verify login page loaded or not........................................skipped
+When enter username as "User3"..............................................skipped
+And enter password as "Guru@12345"..........................................skipped
+When click login button.....................................................skipped
+Then verify login success or not............................................skipped
+
+StackTrace:
+java.lang.ArithmeticException: / by zero
+	at testCases.LoginTest.openBrowser(LoginTest.java:15)
+	at ✽.open browser as "ie"(classpath:testCases/login.feature:11)
+]]></failure>
+    </testcase>
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data... 4" time="0.034">
+        <system-out><![CDATA[Given open browser as "edge"................................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When click login link.......................................................passed
+Then verify login page loaded or not........................................passed
+When enter username as "User4"..............................................passed
+And enter password as "Guru@12345"..........................................passed
+When click login button.....................................................passed
+Then verify login success or not............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
