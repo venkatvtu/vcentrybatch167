@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.871">
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="21.184">
+        <system-out><![CDATA[Given verify network........................................................passed
+Given verify excel location.................................................passed
+Given verify properties file location.......................................passed
+Given verify database.......................................................passed
+When enter username and password in db login url............................passed
+When establish db connection................................................passed
+Then verify db connected or not.............................................passed
+Given open browser as "chrome"..............................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When click login link.......................................................passed
+Then verify login page loaded or not........................................passed
+When enter username as "venkat".............................................passed
+And enter password as "Vcentry@2021"........................................passed
+When click login button.....................................................passed
+Then verify login success or not............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

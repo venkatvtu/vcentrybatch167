@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.vcentry</groupId>
-  <artifactId>B11_SampleMaven</artifactId>
+  <artifactId>B9._CucumberBackgroundTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
   <cucumber.version>6.10.4</cucumber.version>
@@ -41,10 +41,14 @@
     <artifactId>selenium-java</artifactId>
     <version>3.141.59</version>
 </dependency>
+
+  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>4.4.3</version>
+</dependency>
   
   
   </dependencies>
-  
-  
-  
 </project>
