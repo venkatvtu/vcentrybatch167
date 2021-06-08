@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="83.766">
+    <testcase classname="verify the product purchase" name="validate purchase with multi products count" time="29.213">
+        <system-out><![CDATA[Given open browser as "chrome"..............................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When Click login link.......................................................passed
+Then verify whether entered to login page or not............................passed
+When enter user name as "user1".............................................passed
+And enter password as "Guru@12345"..........................................passed
+And click loginbutton.......................................................passed
+And click framework forms...................................................passed
+And click product purchase flow.............................................passed
+Then verify product input page..............................................passed
+When add products list......................................................passed
+Then verify product added or not............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verify the product purchase" name="validate purchase with multi products count 2" time="26.406">
+        <system-out><![CDATA[Given open browser as "chrome"..............................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When Click login link.......................................................passed
+Then verify whether entered to login page or not............................passed
+When enter user name as "user1".............................................passed
+And enter password as "Guru@12345"..........................................passed
+And click loginbutton.......................................................passed
+And click framework forms...................................................passed
+And click product purchase flow.............................................passed
+Then verify product input page..............................................passed
+When add products list......................................................passed
+Then verify product added or not............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verify the product purchase" name="validate purchase with multi products count 3" time="27.518">
+        <system-out><![CDATA[Given open browser as "chrome"..............................................passed
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
+When Click login link.......................................................passed
+Then verify whether entered to login page or not............................passed
+When enter user name as "user1".............................................passed
+And enter password as "Guru@12345"..........................................passed
+And click loginbutton.......................................................passed
+And click framework forms...................................................passed
+And click product purchase flow.............................................passed
+Then verify product input page..............................................passed
+When add products list......................................................passed
+Then verify product added or not............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

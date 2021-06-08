@@ -1,0 +1,699 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T11:37:37.649Z",
+        "line": 29,
+        "name": "validate purchase with multi products count",
+        "description": "",
+        "id": "verify-the-product-purchase;validate-purchase-with-multi-products-count;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5067731900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open browser as \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 16
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.openBrowser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1699187200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter url as \"http://djangovinoth.pythonanywhere.com/login/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://djangovinoth.pythonanywhere.com/login/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterUrl(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1693958600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click login link",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 214867700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify whether entered to login page or not",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verifyWhetherEnteredTologinPageOrNot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 401753600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter user name as \"user1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterUserName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 199875300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter password as \"Guru@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Guru@12345\"",
+                  "offset": 18
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1758424000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click loginbutton",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140905900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click framework forms",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickFrameworkForms()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 930352100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click product purchase flow",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickProductPurchaseFlow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify product input page",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verifyProductInputPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16946721900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "add products list",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.add_products_list(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "product a",
+                  "11111",
+                  "email a",
+                  "Electrical",
+                  "10",
+                  "purchase a"
+                ]
+              },
+              {
+                "cells": [
+                  "product b",
+                  "11111",
+                  "email b",
+                  "Electrical",
+                  "20",
+                  "purchase b"
+                ]
+              },
+              {
+                "cells": [
+                  "product c",
+                  "11111",
+                  "email c",
+                  "Electrical",
+                  "30",
+                  "purchase c"
+                ]
+              },
+              {
+                "cells": [
+                  "product d",
+                  "11111",
+                  "email d",
+                  "Electrical",
+                  "40",
+                  "purchase d"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify product added or not",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verify_product_added_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-08T11:38:06.936Z",
+        "line": 30,
+        "name": "validate purchase with multi products count",
+        "description": "",
+        "id": "verify-the-product-purchase;validate-purchase-with-multi-products-count;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2854707900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open browser as \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 16
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.openBrowser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1355166600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter url as \"http://djangovinoth.pythonanywhere.com/login/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://djangovinoth.pythonanywhere.com/login/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterUrl(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 630610500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click login link",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97939800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify whether entered to login page or not",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verifyWhetherEnteredTologinPageOrNot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 120928900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter user name as \"user1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterUserName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202875400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter password as \"Guru@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Guru@12345\"",
+                  "offset": 18
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1850310300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click loginbutton",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135921600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click framework forms",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickFrameworkForms()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1569474100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click product purchase flow",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickProductPurchaseFlow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify product input page",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verifyProductInputPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17547808300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "add products list",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.add_products_list(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "product a",
+                  "11111",
+                  "email a",
+                  "Electrical",
+                  "10",
+                  "purchase a"
+                ]
+              },
+              {
+                "cells": [
+                  "product b",
+                  "11111",
+                  "email b",
+                  "Electrical",
+                  "20",
+                  "purchase b"
+                ]
+              },
+              {
+                "cells": [
+                  "product c",
+                  "11111",
+                  "email c",
+                  "Electrical",
+                  "30",
+                  "purchase c"
+                ]
+              },
+              {
+                "cells": [
+                  "product d",
+                  "11111",
+                  "email d",
+                  "Electrical",
+                  "40",
+                  "purchase d"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify product added or not",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verify_product_added_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-08T11:38:33.426Z",
+        "line": 31,
+        "name": "validate purchase with multi products count",
+        "description": "",
+        "id": "verify-the-product-purchase;validate-purchase-with-multi-products-count;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2944923600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open browser as \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"chrome\"",
+                  "offset": 16
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.openBrowser(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1277210100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter url as \"http://djangovinoth.pythonanywhere.com/login/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://djangovinoth.pythonanywhere.com/login/\"",
+                  "offset": 13
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterUrl(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 726474900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click login link",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickLoginLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71955500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify whether entered to login page or not",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verifyWhetherEnteredTologinPageOrNot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 123924100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter user name as \"user1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user1\"",
+                  "offset": 19
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterUserName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196880300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter password as \"Guru@12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Guru@12345\"",
+                  "offset": 18
+                }
+              ],
+              "location": "tastCases.ProductPurchaseTest.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1842135700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click loginbutton",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294823600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click framework forms",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickFrameworkForms()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2073820100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click product purchase flow",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.clickProductPurchaseFlow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2003800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify product input page",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verifyProductInputPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17915984000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "add products list",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.add_products_list(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "product a",
+                  "11111",
+                  "email a",
+                  "Electrical",
+                  "10",
+                  "purchase a"
+                ]
+              },
+              {
+                "cells": [
+                  "product b",
+                  "11111",
+                  "email b",
+                  "Electrical",
+                  "20",
+                  "purchase b"
+                ]
+              },
+              {
+                "cells": [
+                  "product c",
+                  "11111",
+                  "email c",
+                  "Electrical",
+                  "30",
+                  "purchase c"
+                ]
+              },
+              {
+                "cells": [
+                  "product d",
+                  "11111",
+                  "email d",
+                  "Electrical",
+                  "40",
+                  "purchase d"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1981100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify product added or not",
+            "match": {
+              "location": "tastCases.ProductPurchaseTest.verify_product_added_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product"
+          }
+        ]
+      }
+    ],
+    "name": "verify the product purchase",
+    "description": "",
+    "id": "verify-the-product-purchase",
+    "keyword": "Feature",
+    "uri": "classpath:tastCases/productPruchase.feature",
+    "tags": [
+      {
+        "name": "@product",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

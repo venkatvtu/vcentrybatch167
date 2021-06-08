@@ -37,9 +37,16 @@ public class LoginTest {
 	@After
 	public void tearDown(Scenario s) throws IOException
 	{
+		System.out.println("getId - "+s.getId());
+		System.out.println("getName - "+s.getName());
+		System.out.println("getLine - "+s.getLine());
+		System.out.println("get status - "+s.getStatus());
+		System.out.println("get url - "+s.getUri());
+		System.out.println("is failed - "+s.isFailed());
 		if(s.isFailed()) {
 		File src =((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(src, new File("C:\\vcentry\\batch167\\B11_ScreenShotForFailure\\screenshot\\failed.png"));
+		
 		}
 		}
 	@When ("enter url as {string}")

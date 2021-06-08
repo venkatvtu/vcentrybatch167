@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.979">
-    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="18.133">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.832">
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="26.766">
         <failure message="/ by zero" type="java.lang.ArithmeticException"><![CDATA[Given verify network........................................................passed
 Given verify excel location.................................................passed
 Given verify properties file location.......................................passed
@@ -19,7 +19,7 @@ Then verify login success or not............................................skip
 
 StackTrace:
 java.lang.ArithmeticException: / by zero
-	at stepDefinitions.LoginTest.enterPassword(LoginTest.java:71)
+	at stepDefinitions.LoginTest.enterPassword(LoginTest.java:78)
 	at ✽.enter password as "Vcentry@2021"(file:///C:/vcentry/batch167/B11_ScreenShotForFailure/src/test/resources/features/login.feature:24)
 ]]></failure>
     </testcase>
