@@ -40,7 +40,8 @@ public class LoginTest {
 	public void verifyLoginPageLoadedOrNot()
 	{
 		String text = wd.findElement(By.xpath("/html/body/main/div/div/div/div/form/fieldset/legend")).getText();
-		Assert.assertEquals(text,"Log In");
+		Assert.assertEquals("Log In",text);
+		
 	}
 			
 	@When ("enter username as {string}")

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.871">
-    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="21.184">
-        <system-out><![CDATA[Given verify network........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.432">
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="15.446">
+        <failure message="unknown error: cannot determine loading status&#10;from disconnected: unable to send message to renderer&#10;  (Session info: chrome=91.0.4472.101)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-OOAJ2R4', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: edbb7b9ad9b6b0647d9f67a8f2dd9a20" type="org.openqa.selenium.WebDriverException"><![CDATA[Given verify network........................................................passed
 Given verify excel location.................................................passed
 Given verify properties file location.......................................passed
 Given verify database.......................................................passed
@@ -9,13 +9,37 @@ When enter username and password in db login url............................pass
 When establish db connection................................................passed
 Then verify db connected or not.............................................passed
 Given open browser as "chrome"..............................................passed
-When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........passed
-When click login link.......................................................passed
-Then verify login page loaded or not........................................passed
-When enter username as "venkat".............................................passed
-And enter password as "Vcentry@2021"........................................passed
-When click login button.....................................................passed
-Then verify login success or not............................................passed
-]]></system-out>
+When enter url as "http://djangovinoth.pythonanywhere.com/login/"...........failed
+When click login link.......................................................skipped
+Then verify login page loaded or not........................................skipped
+When enter username as "venkat".............................................skipped
+And enter password as "Vcentry@2021"........................................skipped
+When click login button.....................................................skipped
+Then verify login success or not............................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-OOAJ2R4', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edbb7b9ad9b6b0647d9f67a8f2dd9a20
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at stepDefinitions.LoginTest.enterUrl(LoginTest.java:32)
+	at ✽.enter url as "http://djangovinoth.pythonanywhere.com/login/"(file:///C:/vcentry/batch167/B9._CucumberBackgroundTest/src/test/resources/features/login.feature:20)
+]]></failure>
     </testcase>
 </testsuite>

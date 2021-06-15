@@ -3,7 +3,7 @@
     "line": 5,
     "elements": [
       {
-        "start_timestamp": "2021-06-03T05:13:04.836Z",
+        "start_timestamp": "2021-06-15T09:05:51.244Z",
         "line": 9,
         "name": "validate login feature of vcentry app with valid data...",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8996600,
+              "duration": 28983200,
               "status": "passed"
             },
             "line": 11,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1000100,
+              "duration": 15993500,
               "status": "passed"
             },
             "line": 12,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 998700,
+              "duration": 5169500,
               "status": "passed"
             },
             "line": 13,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 1000100,
+              "duration": 19986900,
               "status": "passed"
             },
             "line": 14,
@@ -61,6 +61,7 @@
           },
           {
             "result": {
+              "duration": 1996100,
               "status": "passed"
             },
             "line": 15,
@@ -72,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 999100,
+              "duration": 2997300,
               "status": "passed"
             },
             "line": 16,
@@ -84,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 1998400,
               "status": "passed"
             },
             "line": 17,
@@ -96,14 +97,11 @@
           },
           {
             "result": {
-              "duration": 2000900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 18,
             "name": "verify login success or not",
-            "match": {
-              "location": "testCases.LoginTest.verifyLoginSuccessOrNot()"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ],

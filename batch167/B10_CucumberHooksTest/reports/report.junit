@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.837">
-    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="20.102">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="29.094">
+    <testcase classname="validate login features of vcentry app" name="validate login feature of vcentry app with valid data..." time="28.358">
         <system-out><![CDATA[Given verify network........................................................passed
 Given verify excel location.................................................passed
 Given verify properties file location.......................................passed
