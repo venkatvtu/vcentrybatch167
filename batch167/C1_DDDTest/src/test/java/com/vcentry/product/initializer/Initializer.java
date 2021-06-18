@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -28,7 +30,7 @@ public class Initializer {
 	 * locatorprop variable initialize locator.properties
 	 * 
 	 */
-	public static Properties locatorprop=null;
+	public static Properties locatorProp=null;
 	/**
 	 * @author venkat
 	 * @date-15th june 2021
@@ -47,8 +49,8 @@ public class Initializer {
 		envprop= new Properties();
 		envprop.load(new FileInputStream(new File(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"com"+File.separator+"vcentry"+File.separator+"product"+File.separator+"config"+File.separator+"env.properties")));
 	
-		locatorprop= new Properties();
-		locatorprop.load(new FileInputStream(new File(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"com"+File.separator+"vcentry"+File.separator+"product"+File.separator+"config"+File.separator+"locator.properties")));
+		locatorProp= new Properties();
+		locatorProp.load(new FileInputStream(new File(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"com"+File.separator+"vcentry"+File.separator+"product"+File.separator+"config"+File.separator+"locator.properties")));
 		if(envprop.get("BROWSER").equals("CHROME")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Downloads\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
@@ -65,5 +67,13 @@ public class Initializer {
 		wd.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	}
 	
+	public static WebElement getElementByName(String locatorprop)
+	{
+		return wd.findElement(By.name(locatorProp.getProperty(locatorprop)));
+	}
 	
+	public static WebElement getElementById(String locatorprop)
+	{
+		return wd.findElement(By.id(locatorProp.getProperty(locatorprop)));
+	}
 }
