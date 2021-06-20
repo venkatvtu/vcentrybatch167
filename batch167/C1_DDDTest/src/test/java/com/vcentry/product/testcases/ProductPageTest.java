@@ -5,16 +5,20 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.vcentry.product.initializer.Initializer;
+import com.vcentry.product.inputReader.InputReader;
 import com.vcentry.product.pages.LoginPage;
 import com.vcentry.product.pages.ProductPage;
+import com.vcentry.product.reportOptimizer.ReportGenerator;
 
 public class ProductPageTest extends Initializer{
 	@Test(dataProvider="ProductPageTest")
-	public void validateProductPage(String username,String password,String productname,String mobile,
+	public void validateProductPage(String tcName,String username,String password,String productname,String mobile,
 			String email,String productcat,String Qty,String purchaser) throws IOException
 	{
 		initialize();
@@ -78,17 +82,18 @@ public class ProductPageTest extends Initializer{
 	ProductPage.clickGst();
 	ProductPage.clickCod();
 	ProductPage.clickPlaceOrder();
-	
+	log=reports.startTest(tcName+"------completed");
 	}
 	@DataProvider(name="ProductPageTest")
-	public static Object[][] getProductPage()
+	public static Object[][] getProductPage() throws Exception
 	{
 		// run test in 3 times 
 		// total data = 8
-		Object[][] data = new Object[3][8];
+		if(InputReader.runModeVerification("ProductPageTest")) {
+		Object[][] data =InputReader.selectSingleDataOrMulitiData("ProductPageTest");
 		//first set
 		
-		data[0][0]="venkat";
+		/*data[0][0]="venkat";
 		data[0][1]="Vcentry@2021";
 		data[0][2]="product a";
 		data[0][3]="111111111";
@@ -115,7 +120,14 @@ public class ProductPageTest extends Initializer{
 		data[2][4]="cccccc@gmail.com";
 		data[2][5]="Electronics";
 		data[2][6]="30";
-		data[2][7]="purchaser c";
+		data[2][7]="purchaser c";*/
 		return data;
+	}
+		return null;
+}
+	@AfterMethod
+	public void teardown(ITestResult it) throws IOException
+	{
+		ReportGenerator.generateReport(it);
 	}
 }

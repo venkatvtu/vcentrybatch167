@@ -14,9 +14,22 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.vcentry.product.utils.ReportArchiver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Initializer {
+	/**
+	 * @author venkat
+	 * @date - 20 june 2021
+	 * extent report variables
+	 */
+	public static ExtentReports reports;
+	public static ExtentTest log;
+	public static boolean isReportExist=false;
+	
 	/**
 	 * @author venkat
 	 * @date-15th june 2021
@@ -46,6 +59,12 @@ public class Initializer {
 	 */
 	public static void initialize() throws IOException
 	{
+		if(!isReportExist)
+		{
+		reports=new ExtentReports("C:\\vcentry\\batch167\\C1_DDDTest\\reports\\sample.html");
+		ReportArchiver.archiveScreenshot();
+		isReportExist=true;
+		}
 		envprop= new Properties();
 		envprop.load(new FileInputStream(new File(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"com"+File.separator+"vcentry"+File.separator+"product"+File.separator+"config"+File.separator+"env.properties")));
 	

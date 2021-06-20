@@ -5,6 +5,7 @@
     <classes>
       <class name="com.vcentry.product.testcases.ProductPageTest">
         <methods>
+          <include name="teardown"/>
           <include name="validateProductPage"/>
         </methods>
       </class> <!-- com.vcentry.product.testcases.ProductPageTest -->
